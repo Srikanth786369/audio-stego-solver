@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Audio Stego Solver</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.hero{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.hero h1{
+    font-size:56px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#cbd5e1;
+    font-size:20px;
+    line-height:1.6;
+    max-width:850px;
+    margin:auto;
+}
+
+.buttons{
+    margin-top:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    margin:10px;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:.2s;
+}
+
+.primary{
+    background:#2563eb;
+    color:white;
+}
+
+.primary:hover{
+    background:#1d4ed8;
+}
+
+.secondary{
+    border:2px solid #2563eb;
+    color:white;
+}
+
+.secondary:hover{
+    background:#2563eb;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    margin-top:50px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#60a5fa;
+}
+
+.card p{
+    color:#d1d5db;
+    line-height:1.6;
+}
+
+.features{
+    margin-top:70px;
+}
+
+.features h2{
+    text-align:center;
+    margin-bottom:35px;
+    font-size:34px;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    padding:8px 0;
+    color:#d1d5db;
+}
+
+.footer{
+    margin-top:80px;
+    text-align:center;
+    color:#94a3b8;
+    font-size:15px;
+    border-top:1px solid #334155;
+    padding-top:30px;
+}
+
+.footer a{
+    color:#60a5fa;
+    text-decoration:none;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:30px;
+    background:#1d4ed8;
+    margin-bottom:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="hero">
+
+<div class="badge">
+Version 5.0
+</div>
+
+<h1>🎵 Audio Stego Solver</h1>
+
+<p>
+Automated Audio Steganography Analysis Framework for CTFs, Digital
+Forensics and Security Research.
+Analyze WAV, MP3 and other audio files using multiple extraction,
+decoding and forensic techniques through a single command.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary"
+href="Example-Outputs/report.html">
+📊 View Example Report
+</a>
+
+<a class="btn secondary"
+href="https://github.com/Srikanth786369/audio-stego-solver">
+💻 Source Code
+</a>
+
+<a class="btn secondary"
+href="README.md">
+📖 Documentation
+</a>
+
+</div>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<h2>🔍 Analysis</h2>
+
+<p>
+
+• Metadata Extraction<br>
+• Binary Analysis<br>
+• File Carving<br>
+• Spectrogram Generation<br>
+• Waveform Analysis<br>
+• FFT Analysis
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>📡 Signal Decoding</h2>
+
+<p>
+
+• SSTV<br>
+• QR Detection<br>
+• OCR<br>
+• Morse<br>
+• DTMF<br>
+• Digital Modes
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🧩 Decoders</h2>
+
+<p>
+
+• Base32<br>
+• Base58<br>
+• Base64<br>
+• Base85<br>
+• XOR<br>
+• ROT/Caesar
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⚡ Features</h2>
+
+<p>
+
+• Interactive HTML Report<br>
+• Plugin System<br>
+• Automatic Flag Detection<br>
+• Tool Output Viewer<br>
+• Evidence Chain<br>
+• CLI Interface
+
+</p>
+
+</div>
+
+</div>
+
+<div class="features">
+
+<h2>Supported External Tools</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<ul>
+
+<li>✔ ExifTool</li>
+<li>✔ FFprobe</li>
+<li>✔ FFmpeg</li>
+<li>✔ Binwalk</li>
+<li>✔ Foremost</li>
+<li>✔ Scalpel</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<ul>
+
+<li>✔ Steghide</li>
+<li>✔ Stegseek</li>
+<li>✔ Multimon-ng</li>
+<li>✔ Minimodem</li>
+<li>✔ Tesseract OCR</li>
+<li>✔ ZBar</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<ul>
+
+<li>✔ QSSTV</li>
+<li>✔ Sox</li>
+<li>✔ Python Plugins</li>
+<li>✔ HTML Reports</li>
+<li>✔ JSON Reports</li>
+<li>✔ TXT Reports</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<p>
+
+Developed by <strong>Srikanth T</strong>
+
+</p>
+
+<br>
+
+<p>
+
+LinkedIn:
+<a href="https://www.linkedin.com/in/srikanth786369/" target="_blank">
+https://www.linkedin.com/in/srikanth786369/
+</a>
+
+</p>
+
+<br>
+
+<p>
+
+MIT License • Audio Stego Solver v5.0
+
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>

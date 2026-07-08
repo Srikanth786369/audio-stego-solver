@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audio-stego-solver"
+version = "5.0.0"
+description = "Automated audio steganography analysis tool for CTF challenges"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Srikanth T" }]
+requires-python = ">=3.9"
+keywords = ["steganography", "ctf", "audio", "forensics", "security"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Security",
+    "Topic :: Multimedia :: Sound/Audio :: Analysis",
+    "Environment :: Console",
+]
+dependencies = [
+    "click>=8.0.0",
+    "rich>=13.0.0",
+    "librosa>=0.10.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "matplotlib>=3.7.0",
+    "soundfile>=0.12.0",
+]
+
+[project.optional-dependencies]
+yara = ["yara-python>=4.3.0"]
+dev = ["pytest>=7.4.0", "pytest-cov>=4.0.0", "black", "isort", "mypy"]
+
+[project.urls]
+Homepage = "https://github.com/example/audio-stego-solver"
+Issues = "https://github.com/example/audio-stego-solver/issues"
+
+[project.scripts]
+audio-stego = "audio_stego.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["audio_stego*"]
+
+[tool.setuptools.package-data]
+"audio_stego" = ["*.ini", "plugins/*.py"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.9"
+ignore_missing_imports = true
