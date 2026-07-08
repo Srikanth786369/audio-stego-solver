@@ -113,11 +113,17 @@ wget https://github.com/RickdeJager/stegseek/releases/download/v0.6/stegseek_0.6
 sudo dpkg -i stegseek_0.6-1.deb
 ```
 
+
 ### Install the tool
 
 ```bash
-git clone https://github.com/example/audio-stego-solver
+git clone https://github.com/Srikanth786369/audio-stego-solver.git
 cd audio-stego-solver
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+pip install -U pip
 pip install .
 
 # With YARA support
